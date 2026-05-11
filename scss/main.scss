@@ -6,14 +6,20 @@ h1{
 
 .card{
     background-color: black;
-    color: aliceblue;
 
     // Beispiel "Nesting" : Schönere Schreibweise der Angaben unten.
-    > h2{
-        color: #ff0000;
+    &__title{
+        color: #a40091;
     }
-    &:hover{
-        background-color: #ff0000;
+    &__text{
+        color: aliceblue;
+
+        &--highlight{
+            color: rgb(208, 255, 0);
+        }
+        &:hover{
+            color: rgb(255, 0, 0);
+        }
     }
 }
 

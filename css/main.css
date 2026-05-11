@@ -1,5 +1,21 @@
 h1 {
-  color: 0;
+  color: #0400ff;
+}
+
+.card {
+  background-color: black;
+}
+.card__title {
+  color: #a40091;
+}
+.card__text {
+  color: aliceblue;
+}
+.card__text--highlight {
+  color: rgb(208, 255, 0);
+}
+.card__text:hover {
+  color: rgb(255, 0, 0);
 }
 
 /*# sourceMappingURL=main.css.map */
