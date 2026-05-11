@@ -1,3 +1,28 @@
+// NESTING
+
 h1{
-    color: blue($color: #000000);
+    color: #0400ff;
 }
+
+.card{
+    background-color: black;
+    color: aliceblue;
+
+    // Beispiel "Nesting" : Schönere Schreibweise der Angaben unten.
+    > h2{
+        color: #ff0000;
+    }
+    &:hover{
+        background-color: #ff0000;
+    }
+}
+
+// Wenn das direkte Child-Elemenet vom object mit der Klasse .card eine h2 ist, dann nutze das folgende Design
+//.card > h2{
+//     color: #ff0000;
+//}
+
+// Beispiel &-Operator
+//.card:hover{
+//    background-color: #ff0000;
+//}
