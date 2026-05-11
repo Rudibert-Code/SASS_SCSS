@@ -1,5 +1,10 @@
 .card {
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 .card__title {
   color: #a40091;

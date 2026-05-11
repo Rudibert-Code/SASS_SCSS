@@ -1,5 +1,11 @@
+@use '../abstract/mixin';
+
 .card{
     background-color: black;
+
+    // bezihe @mixin flex-center mit in diese Klasse ein
+    // mixin.  muss angebunden werden, wenn auch @use partials zugegriffen werden soll
+    @include mixin.flex-center;
 
     // Beispiel "Nesting" : Schönere Schreibweise der Angaben unten.
     &__title{
