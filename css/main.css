@@ -1,7 +1,3 @@
-h1 {
-  color: grey;
-}
-
 .card {
   background-color: black;
 }
@@ -16,6 +12,14 @@ h1 {
 }
 .card__text:hover {
   color: rgb(255, 0, 0);
+}
+
+.root {
+  --grey-bg:grey;
+}
+
+h1 {
+  color: grey;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,12 @@
+// Verbindet main.scss mit partial (_card.scss)
+// @use sagt dem Code, dass elemente aus anderem partial-Quellen genutzt werden soll, ohne diesen mehrfach zu laden ( verbessert Performance & kürzt Skript)
+@use './components/card';
+
+
+
 // NESTING
 
 $grey-bg: grey;
-
 // CSS Version von $grey-bg (siehe oben)
 .root{
     --grey-bg:grey;
@@ -15,24 +20,6 @@ h1{
     //color: var(--grey-bg);
 }
 
-.card{
-    background-color: black;
-
-    // Beispiel "Nesting" : Schönere Schreibweise der Angaben unten.
-    &__title{
-        color: #a40091;
-    }
-    &__text{
-        color: aliceblue;
-
-        &--highlight{
-            color: rgb(208, 255, 0);
-        }
-        &:hover{
-            color: rgb(255, 0, 0);
-        }
-    }
-}
 
 // Wenn das direkte Child-Elemenet vom object mit der Klasse .card eine h2 ist, dann nutze das folgende Design
 //.card > h2{
