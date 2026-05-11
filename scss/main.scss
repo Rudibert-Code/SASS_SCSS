@@ -1,7 +1,18 @@
 // NESTING
 
+$grey-bg: grey;
+
+// CSS Version von $grey-bg (siehe oben)
+.root{
+    --grey-bg:grey;
+}
+
 h1{
-    color: #0400ff;
+    // SCSS Version wird genutzt, wenn sich Element NICHT ändert
+    color: $grey-bg;
+    
+    // CSS Version... siehe oben
+    //color: var(--grey-bg);
 }
 
 .card{
@@ -32,3 +43,4 @@ h1{
 //.card:hover{
 //    background-color: #ff0000;
 //}
+
