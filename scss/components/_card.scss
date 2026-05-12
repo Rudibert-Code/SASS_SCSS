@@ -1,14 +1,13 @@
+//@use '../abstract/functions' as fct;
 @use '../abstract/mixin' as mixin;
-@use '../abstract/functions' as fct;
 
 .card{
     background-color: black;
 
     // bezihe @mixin flex-center mit in diese Klasse ein
     // mixin.  muss angebunden werden, wenn auch @use partials zugegriffen werden soll
+    //@include fct.px-to-rem(); 
     @include mixin.flex-center();
-    @include fct.px-to-rem();
-
     // Beispiel "Nesting" : Schönere Schreibweise der Angaben unten.
     &__title{
         color: #a40091;
@@ -23,4 +22,6 @@
             color: rgb(255, 0, 0);
         }
     }
+
+    //font-size: fct.px-to-rem(10);
 }
