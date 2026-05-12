@@ -1,0 +1,11 @@
+$margins:(
+    s:8px,
+    m:16px,
+    l:32px,
+);
+
+@each $name, $amount in $margins{
+    .margin-#{$name}{
+        margin: $amount;
+    }
+}

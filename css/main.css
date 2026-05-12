@@ -10,6 +10,18 @@
   font-size: 32px;
 }
 
+.margin-s {
+  margin: 8px;
+}
+
+.margin-m {
+  margin: 16px;
+}
+
+.margin-l {
+  margin: 32px;
+}
+
 .card {
   background-color: black;
   display: flex;
