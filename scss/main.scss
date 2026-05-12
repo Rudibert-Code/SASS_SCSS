@@ -2,7 +2,7 @@
 // @use sagt dem Code, dass elemente aus anderem partial-Quellen genutzt werden soll, ohne diesen mehrfach zu laden ( verbessert Performance & kürzt Skript)
 @use './base/typography.scss';
 @use './base/margin.scss';
-@use './components/card';
+@use './components/main';
 
 
 
